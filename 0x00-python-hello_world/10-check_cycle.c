@@ -13,7 +13,7 @@ int check_cycle(listint_t *list)
 	current_node = list;
 	next_node = list->next;
 
-	if (next_node != NULL || next_node != NULL)
+	if (next_node != NULL && next_node != NULL)
 	{
 		if (current_node == next_node)
 		{
