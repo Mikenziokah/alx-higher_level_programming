@@ -1,8 +1,10 @@
-#!/usr/bin/python3
+#!/usr/bin/pytho3
+"""
+New class Rectangle
+
+"""
+
+
 class Rectangle:
-    """
-
-    defines a rectangle.
-
-    """
+    """Rectangle class empty"""
     pass
