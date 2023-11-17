@@ -14,12 +14,12 @@ if __name__ == '__main__':
 
     # ability to run multiple database
     cur = db.cursor()
-    cur.execute("SELECT *FROM states WHERE BINARY name = %s", [argv[4]])
+    nmeSr = "SELECT *FROM states WHERE name LIKE BINARY '{}'".format(argv[4])
+    cur.execute(nmeSr)
 
     rows = cur.fetchall()
     for x in rows:
         print(x)
-
         # clean process
         cur.close()
         db.close()
